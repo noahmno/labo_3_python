@@ -12,9 +12,9 @@ def printnum(i):
     print(i)
 
 
-def binrep(n):
+def binrep(n): # fonction générattrice
     while n > 0:
-        yield n % 2
+        yield n % 2 # yield c'est comme un return qui retient ou on est dans la fonction
         n//=2
 for b in binrep(334):
     print(b)
