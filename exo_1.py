@@ -2,7 +2,7 @@
 def hello():
     print("hello python ")
 
-def call(f,*args,**kwargs):
+def call(f,*args,**kwargs):    # kwargs ---> argument optionnel
     return f(*args,**kwargs)
    # return f(*args,**kwargs) # ** va comme ouvrir un dictionnaire , lui prends pas seulement des valeur comme avec 1 * , on a des cles ici op et on peutmettre des valeurs 
 # * ---> Lavaleurestuntoplereprenant lesparamètresdans l’ordre
