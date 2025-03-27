@@ -3,8 +3,9 @@ def hello():
     print("hello python ")
 
 def call(f,*args,**kwargs):
-    return f(*args,**kwargs)
-
+    return f(*args,**kwargs) # ** va comme ouvrir un dictionnaire , lui prends pas seulement des valeur comme avec 1 * , on a des cles ici op et on peutmettre des valeurs 
+# * ---> Lavaleurestuntuplereprenant lesparamètresdans l’ordre
+# ** ---->  Lavaleurestundictionnairereprenant lesparamètres
 def add(a,b):
     return a+b
 def sub(a,b):
@@ -16,7 +17,8 @@ def compute(a,b,op=add):
 
 call(hello)
 print(call(add,40,2))
-print(call(sub,40,2))
+print(call(compute,44,2,op=sub))
+print(call(compute,44,2,op=lambda a,b:a*b))
 
     
 
